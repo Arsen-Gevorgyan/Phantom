@@ -1,0 +1,465 @@
+[gd_scene format=3 uid="uid://d2umvbsmuu7qp"]
+
+[ext_resource type="Script" uid="uid://davucl5rivda0" path="res://Scenes/TitleScreen.gd" id="1_8vrrs"]
+[ext_resource type="Texture2D" uid="uid://djgv7q0s4sc8c" path="res://Sprites/Phantom/Background.png" id="2_734s5"]
+[ext_resource type="Texture2D" uid="uid://bmool14abh3b8" path="res://Sprites/Phantom/Logo.png" id="3_ob5tf"]
+[ext_resource type="Texture2D" uid="uid://ddqaayell0tpa" path="res://Sprites/Phantom/Phantom.png" id="4_da5rh"]
+[ext_resource type="Texture2D" uid="uid://b56p37hl041qr" path="res://Sprites/Phantom/Start.png" id="5_dlv3b"]
+[ext_resource type="Texture2D" uid="uid://njt7rnvv72py" path="res://Sprites/Phantom/Settings.png" id="6_duecx"]
+[ext_resource type="Script" uid="uid://bfs58kvravyon" path="res://Scenes/buttonAnim.gd" id="6_xegfj"]
+
+[sub_resource type="Animation" id="Animation_duecx"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Logo2:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(6, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Logo2:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(17, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Logo:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(165, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Logo:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(15.999998, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("VBoxContainer/Start:offset_transform_position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("VBoxContainer/Start:offset_transform_position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("VBoxContainer/Settings:offset_transform_position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("VBoxContainer/Settings:offset_transform_position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_8vrrs"]
+resource_name = "buttons_appear"
+length = 5.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Logo2:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(-158, 0, 0, 1.0666667, -2, 6, -0.9333333, -4, 0.25, 0),
+"times": PackedFloat32Array(0, 2)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Logo2:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(17, 0, 0, 0.0888889, 0, 17, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 2)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Logo:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(165, 0, 0, 0.34297428, 0, 165, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1.5, 3)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Logo:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-48, 0, 0, 1.1021328, 3, 15.999998, -0.9557128, -0.9999981, 0.25, 0),
+"times": PackedFloat32Array(1.5, 3)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("VBoxContainer/Start:offset_transform_position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.33333334, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(2.5, 4)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("VBoxContainer/Start:offset_transform_position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(100, 0, 0, 1.0331416, -2, 0, -0.866858, 2, 0.25, 0),
+"times": PackedFloat32Array(2.5, 4)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("VBoxContainer/Settings:offset_transform_position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.33333334, 0, 0, -0.33333334, 0, 0, 0),
+"times": PackedFloat32Array(3.5, 5)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("VBoxContainer/Settings:offset_transform_position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(100, 0, 0, 0.8998084, -1, 0, -1.0001917, 2, 0, 0),
+"times": PackedFloat32Array(3.5, 5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xegfj"]
+_data = {
+&"RESET": SubResource("Animation_duecx"),
+&"buttons_appear": SubResource("Animation_8vrrs")
+}
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yvsax"]
+texture = ExtResource("5_dlv3b")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_duecx"]
+texture = ExtResource("5_dlv3b")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1wfoj"]
+texture = ExtResource("5_dlv3b")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nltxs"]
+texture = ExtResource("5_dlv3b")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xeave"]
+texture = ExtResource("5_dlv3b")
+
+[sub_resource type="Animation" id="Animation_734s5"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.15, 0, 0.15, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.15, 0, 0.15, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_ob5tf"]
+resource_name = "button_in"
+length = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.15, 0, 0.15, 0, 1.1, -0.050000004, -0.033333343, 0, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.15, 0, 0.15, 0, 1.1, -0.050000004, -0.033333343, 0, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+
+[sub_resource type="Animation" id="Animation_da5rh"]
+resource_name = "button_out"
+length = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1.1, -0.25, 0, 0.25, 0, 1, -0.050000004, 0.016666671, 0, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1.1, -0.25, 0, 0.25, 0, 1, -0.050000004, 0.016666671, 0, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dlv3b"]
+_data = {
+&"RESET": SubResource("Animation_734s5"),
+&"button_in": SubResource("Animation_ob5tf"),
+&"button_out": SubResource("Animation_da5rh")
+}
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_65xwo"]
+texture = ExtResource("6_duecx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s872c"]
+texture = ExtResource("6_duecx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c2so7"]
+texture = ExtResource("6_duecx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_314kj"]
+texture = ExtResource("6_duecx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tuvhg"]
+texture = ExtResource("6_duecx")
+
+[sub_resource type="Animation" id="Animation_dlv3b"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.1, 0, 0.1, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.1, 0, 0.1, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_xegfj"]
+resource_name = "button_in"
+length = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.1, 0, 0.1, 0, 1.1, -0.033333335, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.1, 0, 0.1, 0, 1.1, -0.033333335, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+
+[sub_resource type="Animation" id="Animation_fcctw"]
+resource_name = "button_out"
+length = 0.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(1.1, 0, 0, 0.016666668, -0.016666671, 1, -0.016666668, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(1.1, 0, 0, 0.016666668, -0.016666671, 1, -0.016666668, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.1)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1wfoj"]
+_data = {
+&"RESET": SubResource("Animation_dlv3b"),
+&"button_in": SubResource("Animation_xegfj"),
+&"button_out": SubResource("Animation_fcctw")
+}
+
+[node name="StartMenu" type="Node2D" unique_id=1543603733]
+script = ExtResource("1_8vrrs")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=674322691]
+libraries/ = SubResource("AnimationLibrary_xegfj")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1677876158]
+offset_right = 320.0
+offset_bottom = 180.0
+texture = ExtResource("2_734s5")
+expand_mode = 2
+
+[node name="Logo" type="TextureRect" parent="." unique_id=2029485996]
+offset_left = 165.0
+offset_top = 15.999998
+offset_right = 283.35822
+offset_bottom = 56.0
+scale = Vector2(1.14, 1.14)
+texture = ExtResource("3_ob5tf")
+expand_mode = 3
+
+[node name="Logo2" type="TextureRect" parent="." unique_id=1375981843]
+offset_left = 6.0
+offset_top = 17.0
+offset_right = 124.358215
+offset_bottom = 134.20163
+scale = Vector2(1.255, 1.255)
+texture = ExtResource("4_da5rh")
+expand_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1505192293]
+propagate_maximum_size = false
+offset_left = 197.0
+offset_top = 79.0
+offset_right = 288.78406
+offset_bottom = 151.0
+scale = Vector2(1.065, 1.065)
+pivot_offset = Vector2(150, 0)
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1419795293]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+offset_transform_enabled = true
+theme_override_styles/normal = SubResource("StyleBoxTexture_yvsax")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_duecx")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1wfoj")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_nltxs")
+theme_override_styles/focus = SubResource("StyleBoxTexture_xeave")
+script = ExtResource("6_xegfj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="VBoxContainer/Start" unique_id=1677238442]
+libraries/ = SubResource("AnimationLibrary_dlv3b")
+
+[node name="Settings" type="Button" parent="VBoxContainer" unique_id=1500330432]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+offset_transform_enabled = true
+theme_override_styles/normal = SubResource("StyleBoxTexture_65xwo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_s872c")
+theme_override_styles/hover = SubResource("StyleBoxTexture_c2so7")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_314kj")
+theme_override_styles/focus = SubResource("StyleBoxTexture_tuvhg")
+script = ExtResource("6_xegfj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="VBoxContainer/Settings" unique_id=1574711896]
+libraries/ = SubResource("AnimationLibrary_1wfoj")

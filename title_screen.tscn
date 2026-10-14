@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ciy0kkw7e6wcv"]
+
+[ext_resource type="Texture2D" uid="uid://b0g4o23yigqpp" path="res://Sprites/start_background.png" id="1_v6p8y"]
+
+[node name="TitleScreen" type="Node2D" unique_id=1467302462]
+
+[node name="Background" type="TextureRect" parent="." unique_id=309679356]
+offset_right = 320.0
+offset_bottom = 180.0
+texture = ExtResource("1_v6p8y")
